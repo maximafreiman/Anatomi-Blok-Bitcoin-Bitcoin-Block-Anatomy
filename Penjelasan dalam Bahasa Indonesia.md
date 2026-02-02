@@ -16,10 +16,13 @@ Anggap saja data transaksi ini seperti dalam bentuk dokumen. Dokumen yang berisi
 **A. Coinbase Transaction**
 
 Singkatnya gini, ini adalah transaksi untuk miner, dimana miner berhasil membuat blok bitcoin + dapet fee juga tiap transaksi. Semua dicatat dalam "dokumen transaksi" dengan format seperti ini: 
-![1](https://github.com/user-attachments/assets/44a8beca-8e3c-4925-964b-d77bcc14e167)
-Sederhana sebenernya. Isinya adalah catatan berapa blok yang berhasil dibuat miner + total fee transaksi dalam kurun waktu sebelum 10 menit. Adapun breakdown yang dibagian bawah, itu cuma sebagai dasar aja biar tau total fee itu dari hasil fee berbagai transaksi bitcoin yang ditotalkan, dan breakdown fee sebenernya nggak ditulis, cuma aku tambahkan biar tau aja total fee dari mana.
 
-Sederhana kan? Blok yang berhasil dibuat + Total fee semua transaksi yang tercatat selama kurun waktu kurang lebih 10 menit. 
+<img width="1920" height="1080" alt="bc1q9f3k7xw2m0s8p4v5r6t2j3h5n7a8e9d4c6b (2)" src="https://github.com/user-attachments/assets/56811d0c-d1d3-4fa1-866a-d5f3fd7c9ece" />
+
+
+Sederhana sebenernya. Coinbase transaction isinya adalah catatan reward untuk miner dalam satu blok, yaitu block reward + total fee dari semua transaksi yang tercatat di blok itu. Adapun breakdown fee yang aku tulis di bagian bawah, itu cuma sebagai dasar aja biar tahu total fee berasal dari mana, karena sebenarnya breakdown fee ini nggak ditulis di coinbase tx, cuma aku tambahkan biar lebih jelas.
+
+Sederhana kan? Intinya: reward miner = block reward + total fee semua transaksi dalam blok (~10 menit rata-rata).
 
 Pertanyaannya, bagaimana miner ini bisa dapat fee dari setiap transaksi? Disinilah kita akan bahas bagaimana transaksi dalam Bitcoin ini terjadi.
 
