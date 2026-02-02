@@ -7,7 +7,7 @@ Kali ini, tiba-tiba kepikiran aja gitu. Di masa senggang begini, adakalanya aku 
 Sebelum aku mulai masuk ke inti pembahasan, aku akan buka pembahasan ini dengan 1 kalimat:
 
 
-**"Kalau mau membayangkan blok bitcoin itu seperti apa, anggap aja itu seperti sebuah brankas yang berisi "dokumen" data transaksi. Brankas ini punya label identitasnya sendiri dalam bentuk kode yang dimana semua datanya (label dan isi brankas) tidak bisa dimanipulasi, karena semuanya dibuat secara otomatis dengan kekuatan konsensus mesin/komputer)."**
+**"Kalau mau membayangkan blok bitcoin itu seperti apa, anggap saja itu seperti sebuah brankas yang berisi ‘dokumen’ data transaksi. Brankas ini punya label identitasnya sendiri dalam bentuk kode, dimana semua datanya (label dan isi brankas) tidak bisa dimanipulasi karena semuanya dibuat secara otomatis dengan kekuatan konsensus mesin/komputer."**
 
 Karena "brankas ini" (block bitcoin) ini isinya adalah data transaksi, maka kita akan mulai semuanya dari data transaksi dulu.
 
@@ -17,7 +17,7 @@ Anggap saja data transaksi ini seperti dalam bentuk dokumen. Dokumen yang berisi
 
 Singkatnya gini, ini adalah transaksi untuk miner, dimana miner berhasil membuat blok bitcoin + dapet fee juga tiap transaksi. Semua dicatat dalam "dokumen transaksi" dengan format seperti ini: 
 ![1](https://github.com/user-attachments/assets/44a8beca-8e3c-4925-964b-d77bcc14e167)
-Sederhana sebenernya. Isinya adalah catatan berapa blok yang berhasil dibuat miner + total fee transaksi dalam kurun waktu sebelum menit. Adapun breakdown yang dibagian bawah, itu cuma sebagai dasar aja biar tau total fee itu dari hasil fee berbagai transaksi bitcoin yang ditotalkan, dan breakdown fee sebenernya nggak ditulis, cuma aku tambahkan biar tau aja total fee dari mana.
+Sederhana sebenernya. Isinya adalah catatan berapa blok yang berhasil dibuat miner + total fee transaksi dalam kurun waktu sebelum 10 menit. Adapun breakdown yang dibagian bawah, itu cuma sebagai dasar aja biar tau total fee itu dari hasil fee berbagai transaksi bitcoin yang ditotalkan, dan breakdown fee sebenernya nggak ditulis, cuma aku tambahkan biar tau aja total fee dari mana.
 
 Sederhana kan? Blok yang berhasil dibuat + Total fee semua transaksi yang tercatat selama kurun waktu kurang lebih 10 menit. 
 
@@ -25,13 +25,14 @@ Pertanyaannya, bagaimana miner ini bisa dapat fee dari setiap transaksi? Disinil
 
 **B. Normal Transaction**
 
-Anggaplah ada seseorang, Bu Yayuk namanya. Dia mau beli cabe seharga 4 BTC (Ini cabe carolina reaper 1 ton kayaknya). Dia mau beli cabe tersebut ke Bu Erni. Bu Yayuk punya 10 BTC. Secara aturan konsensus bitcoin, dia tidak bisa mengirim 4 BTC saja secara langsung, melainkan dia harus kirim semua 10 BTC nya ke bu Erni dulu. Secara otomatis, setelah Bu Erni dapat 10 BTC, kembalian akan dikirim ke Bu Yayuk sejumlah 6,01 BTC. Adapun Bu Erni, dia akhirnya dapat 3,99 BTC. Kenapa tidak 4 BTC secara utuh? 
+Anggaplah ada seseorang, Bu Yayuk namanya. Dia mau beli cabe seharga 4 BTC (Ini cabe carolina reaper 1 ton kayaknya). Dia mau beli cabe tersebut ke Bu Erni. Bu Yayuk punya 10 BTC. Secara aturan konsensus bitcoin, dia tidak bisa mengirim 4 BTC saja secara langsung, melainkan dia harus kirim semua 10 BTC nya ke bu Erni dulu. Secara otomatis, setelah Bu Erni dapat 10 BTC, kembalian akan dikirim ke Bu Yayuk sejumlah 5,99 BTC. Adapun Bu Erni, dia akhirnya dapat 3,99 BTC. Kenapa tidak 4 BTC secara utuh? 
 
 Disinilah "biaya admin" atau fee untuk miner berlaku. Pada saat Bu Yayuk mengirim BTC ke Bu Erni, Bu Yayuk juga kena ongkos kirim sejumlah 0,01 BTC ke miner.
 
 Nah, skema visualnya kurang lebih kayak gini:
 
-![2](https://github.com/user-attachments/assets/f49662a9-bf7e-4dab-a159-597512b49e74)
+<img width="1920" height="1080" alt="bc1q9f3k7xw2m0s8p4v5r6t2j3h5n7a8e9d4c6b (1)" src="https://github.com/user-attachments/assets/1a77af6a-e06d-4f9e-91dc-678c690784cf" />
+
 
 Nah ini adalah rangkaian transaksi yang terjadi dalam Bitcoin. Jadi lebih mirip seperti koin cash, hanya saja dalam bentuk digital.
 
